@@ -8,15 +8,36 @@ import {
   NetworkCompBalanceRecord,
   NetworkCompBalanceTable,
   RewardRecord,
-} from 'contract/contract.type';
+} from 'contract/contract.types';
+import { CompoundVersion } from 'common/types/compound-version';
 
 @Injectable()
 export class JsonService {
   private readonly logger = new Logger(JsonService.name);
-  private readonly rootPath = join(process.cwd(), 'output.json');
+  private readonly rootPathMarkets = join(process.cwd(), 'output.json');
+  private readonly rootPathOwesV2 = join(process.cwd(), 'owes-v2.json');
+  private readonly rootPathOwesV3 = join(process.cwd(), 'owes-v3.json');
 
-  write(markets: MarketData[]) {
-    const filePath = this.rootPath;
+  writeOwes(owes: Record<string, number>, version: CompoundVersion): string {
+    const path =
+      version === CompoundVersion.V2
+        ? this.rootPathOwesV2
+        : this.rootPathOwesV3;
+
+    const sorted = Object.fromEntries(
+      Object.entries(owes).sort(([keyA, valA], [keyB, valB]) => {
+        const byValue = valB - valA;
+        if (byValue !== 0) return byValue;
+        return keyA.localeCompare(keyB); // secondary: name/key
+      }),
+    ) as Record<string, number>;
+
+    writeFileSync(path, JSON.stringify(sorted, null, 2));
+    return path;
+  }
+
+  writeMarkets(markets: MarketData[]) {
+    const filePath = this.rootPathMarkets;
     const nested: Record<string, Record<string, any>> = {};
     const marketRewards: RewardRecord[] = [];
     const networkCompBalances: Map<string, number> = new Map();
@@ -92,8 +113,8 @@ export class JsonService {
     }
   }
 
-  read(): NestedMarkets {
-    const filePath = this.rootPath;
+  readMarkets(): NestedMarkets {
+    const filePath = this.rootPathMarkets;
 
     try {
       if (!existsSync(filePath)) {
@@ -114,7 +135,7 @@ export class JsonService {
 
   getMarketsByNetwork(network: string) {
     try {
-      const data = this.read();
+      const data = this.readMarkets();
       return data.markets[network] || null;
     } catch (err) {
       this.logger.error(
