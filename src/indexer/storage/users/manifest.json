@@ -4,14 +4,6 @@
     {
       "network": "arbitrum",
       "version": 3,
-<<<<<<< HEAD
-      "lastCreatedAt": 1766580294,
-      "chunks": [
-        {
-          "file": "v3_arbitrum_0000.sqlite",
-          "rows": 83642,
-          "endCreatedAt": 1766580294
-=======
       "lastCreatedAt": 1766583098,
       "chunks": [
         {
@@ -58,18 +50,13 @@
           "file": "v3_arbitrum_0008.sqlite",
           "rows": 3643,
           "endCreatedAt": 1766583098
->>>>>>> upstream/tasks/second-phase
         }
       ]
     },
     {
       "network": "base",
       "version": 3,
-<<<<<<< HEAD
-      "lastCreatedAt": 1766581087,
-=======
       "lastCreatedAt": 1766585323,
->>>>>>> upstream/tasks/second-phase
       "chunks": [
         {
           "file": "v3_base_0000.sqlite",
@@ -78,10 +65,6 @@
         },
         {
           "file": "v3_base_0001.sqlite",
-<<<<<<< HEAD
-          "rows": 27660,
-          "endCreatedAt": 1766581087
-=======
           "rows": 10000,
           "endCreatedAt": 1706899029
         },
@@ -189,7 +172,6 @@
           "file": "v3_base_0022.sqlite",
           "rows": 7670,
           "endCreatedAt": 1766585323
->>>>>>> upstream/tasks/second-phase
         }
       ]
     },
@@ -222,9 +204,6 @@
         },
         {
           "file": "v2_mainnet_0002.sqlite",
-<<<<<<< HEAD
-          "rows": 168910,
-=======
           "rows": 10000,
           "endCreatedAt": 1570505471
         },
@@ -496,7 +475,6 @@
         {
           "file": "v2_mainnet_0056.sqlite",
           "rows": 8910,
->>>>>>> upstream/tasks/second-phase
           "endCreatedAt": 1766569799
         }
       ]
@@ -504,14 +482,6 @@
     {
       "network": "mainnet",
       "version": 3,
-<<<<<<< HEAD
-      "lastCreatedAt": 1766579195,
-      "chunks": [
-        {
-          "file": "v3_mainnet_0000.sqlite",
-          "rows": 23616,
-          "endCreatedAt": 1766579195
-=======
       "lastCreatedAt": 1766582231,
       "chunks": [
         {
@@ -528,7 +498,6 @@
           "file": "v3_mainnet_0002.sqlite",
           "rows": 3617,
           "endCreatedAt": 1766582231
->>>>>>> upstream/tasks/second-phase
         }
       ]
     },
@@ -547,14 +516,6 @@
     {
       "network": "optimism",
       "version": 3,
-<<<<<<< HEAD
-      "lastCreatedAt": 1766570969,
-      "chunks": [
-        {
-          "file": "v3_optimism_0000.sqlite",
-          "rows": 62482,
-          "endCreatedAt": 1766570969
-=======
       "lastCreatedAt": 1766578517,
       "chunks": [
         {
@@ -591,7 +552,6 @@
           "file": "v3_optimism_0006.sqlite",
           "rows": 2484,
           "endCreatedAt": 1766578517
->>>>>>> upstream/tasks/second-phase
         }
       ]
     },
@@ -602,9 +562,6 @@
       "chunks": [
         {
           "file": "v3_polygon_0000.sqlite",
-<<<<<<< HEAD
-          "rows": 38538,
-=======
           "rows": 10000,
           "endCreatedAt": 1683234827
         },
@@ -621,7 +578,6 @@
         {
           "file": "v3_polygon_0003.sqlite",
           "rows": 8538,
->>>>>>> upstream/tasks/second-phase
           "endCreatedAt": 1766551237
         }
       ]
@@ -645,9 +601,6 @@
       "chunks": [
         {
           "file": "v3_scroll_0000.sqlite",
-<<<<<<< HEAD
-          "rows": 77405,
-=======
           "rows": 10000,
           "endCreatedAt": 1714645190
         },
@@ -684,7 +637,6 @@
         {
           "file": "v3_scroll_0007.sqlite",
           "rows": 7405,
->>>>>>> upstream/tasks/second-phase
           "endCreatedAt": 1766468851
         }
       ]
