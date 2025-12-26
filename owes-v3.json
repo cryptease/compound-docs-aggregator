@@ -1,10 +1,15 @@
 {
-  "mainnet": 79153.143299,
-  "arbitrum": 7767.80135,
-  "base": 5421.569819,
-  "optimism": 2448.999857,
-  "polygon": 1867.417397,
-  "mantle": 1642.168174,
-  "unichain": 1040.60512,
-  "linea": 751.86029
+  "mainnet": 79163.521323,
+  "arbitrum": 7567.668424,
+  "base": 5419.007993,
+  "optimism": 2434.235775,
+  "polygon": 1763.011248,
+  "mantle": 1641.948353,
+  "linea": 751.393242,
+  "unichain": 18.36155,
+  "avalanche": 0,
+  "fuji": 0,
+  "ronin": 0,
+  "scroll": 0,
+  "sepolia": 0
 }
