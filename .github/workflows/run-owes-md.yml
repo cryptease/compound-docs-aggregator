@@ -1,17 +1,23 @@
-name: Update market data
+name: Run owes markdown creation
 
 on:
   workflow_dispatch: # manual start Actions → Run workflow
-  schedule:
-    - cron: '2 12 * * *' # every day at noon (UTC)
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
+      - name: Checkout repository (with LFS)
         uses: actions/checkout@v4
+        with:
+          lfs: true
+
+      - name: Init git and lfs
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "github-actions"
+          git lfs install --local
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -22,21 +28,15 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Init git and lfs
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "github-actions"
-          git lfs install --local
-
-      - name: Run data generation
+      - name: Run owes markdown generation
         env:
           ANKR_KEY: ${{ secrets.ANKR_KEY }}
           UNICHAIN_QUICKNODE_KEY: ${{ secrets.UNICHAIN_QUICKNODE_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: yarn cli:generate:md
+        run: yarn cli:generate:owes:md
 
-      - name: Commit & Push changes
+      - name: Commit & Push changes (owes md)
         run: |
-          git add README.md output.json
-          git diff --cached --quiet || git commit -m "chore: auto-update market data"
+          git add REWARDS.md
+          git diff --cached --quiet || git commit -m "chore: run owes md"
           git push
