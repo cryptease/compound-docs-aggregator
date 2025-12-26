@@ -4,7 +4,7 @@
     {
       "network": "arbitrum",
       "version": 3,
-      "lastCreatedAt": 1766758629,
+      "lastCreatedAt": 1766762432,
       "chunks": [
         {
           "file": "v3_arbitrum_0000.sqlite",
@@ -48,15 +48,15 @@
         },
         {
           "file": "v3_arbitrum_0008.sqlite",
-          "rows": 3662,
-          "endCreatedAt": 1766758629
+          "rows": 3664,
+          "endCreatedAt": 1766762432
         }
       ]
     },
     {
       "network": "base",
       "version": 3,
-      "lastCreatedAt": 1766759581,
+      "lastCreatedAt": 1766767353,
       "chunks": [
         {
           "file": "v3_base_0000.sqlite",
@@ -170,8 +170,8 @@
         },
         {
           "file": "v3_base_0022.sqlite",
-          "rows": 8114,
-          "endCreatedAt": 1766759581
+          "rows": 8130,
+          "endCreatedAt": 1766767353
         }
       ]
     },
@@ -190,7 +190,7 @@
     {
       "network": "mainnet",
       "version": 2,
-      "lastCreatedAt": 1766749151,
+      "lastCreatedAt": 1766760443,
       "chunks": [
         {
           "file": "v2_mainnet_0000.sqlite",
@@ -474,15 +474,15 @@
         },
         {
           "file": "v2_mainnet_0056.sqlite",
-          "rows": 8938,
-          "endCreatedAt": 1766749151
+          "rows": 8939,
+          "endCreatedAt": 1766760443
         }
       ]
     },
     {
       "network": "mainnet",
       "version": 3,
-      "lastCreatedAt": 1766757335,
+      "lastCreatedAt": 1766766551,
       "chunks": [
         {
           "file": "v3_mainnet_0000.sqlite",
@@ -496,8 +496,8 @@
         },
         {
           "file": "v3_mainnet_0002.sqlite",
-          "rows": 3654,
-          "endCreatedAt": 1766757335
+          "rows": 3656,
+          "endCreatedAt": 1766766551
         }
       ]
     },
@@ -516,7 +516,7 @@
     {
       "network": "optimism",
       "version": 3,
-      "lastCreatedAt": 1766759215,
+      "lastCreatedAt": 1766761579,
       "chunks": [
         {
           "file": "v3_optimism_0000.sqlite",
@@ -550,8 +550,8 @@
         },
         {
           "file": "v3_optimism_0006.sqlite",
-          "rows": 2495,
-          "endCreatedAt": 1766759215
+          "rows": 2497,
+          "endCreatedAt": 1766761579
         }
       ]
     },
