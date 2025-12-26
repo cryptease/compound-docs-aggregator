@@ -7,6 +7,49 @@
 ## 🌐 ARBITRUM
 
 <details>
+<summary><strong>cUSDCev3</strong></summary>
+
+**📋 Contracts**
+
+  |  #  | Name                        | Address                                    | Note                        |
+  | :-: | :-------------------------- | :----------------------------------------- | :-------------------------- |
+  |  1  | Comet                       | 0xA5EDBDD9646f8dFF606d7448e414884C7d905dCA | Main market contract        |
+  |  2  | Comet Implementation        | 0x468DCf84d507963eb76135D6249cab1f530c72C9 | Implementation contract     |
+  |  3  | Comet Extension             | 0x5D409e56D886231aDAf00c8775665AD0f9897b56 | Extension delegate contract |
+  |  4  | Configurator                | 0xb21b06D71c75973babdE35b49fFDAc3F82Ad3775 | Market configurator         |
+  |  5  | Configurator Implementation | 0x8495AF03fb797E2965bCB42Cb0693e1c15614798 | Configurator implementation |
+  |  6  | Comet Admin                 | 0xD10b40fF1D92e2267D099Da3509253D9Da4D715e | Admin contract              |
+  |  7  | Comet Factory               | 0x7dE363b6Bf0a892B94a1Cd0C9DF76826bFC14228 | Factory contract            |
+  |  8  | Rewards                     | 0x88730d254A2f7e6AC8388c3198aFd694bA9f7fae | Rewards contract            |
+  |  9  | Bulker                      | 0xbdE8F31D2DdDA895264e27DD990faB3DC87b372d | Bulker contract             |
+  |  10 | Governor                    | 0x42480C37B249e33aABaf4c22B20235656bd38068 | Governance contract         |
+  |  11 | Timelock                    | 0x3fB4d38ea7EC20D91917c09591490Eeda38Cf88A | Timelock contract           |
+
+**📈 Interest Rate Curve**
+
+  |  #  | Parameter              |      Current Value |     Previous Value | Date Set   |
+  | :-: | :--------------------- | -----------------: | -----------------: | :--------- |
+  |  1  | Supply Kink            | 900000000000000000 | 900000000000000000 | 2025-10-31 |
+  |  2  | Supply Rate Slope Low  |         1236681887 |         1236681887 | 2025-10-31 |
+  |  3  | Supply Rate Slope High |       114155251141 |       114155251141 | 2025-10-31 |
+  |  4  | Supply Rate Base       |                  0 |                  0 | 2025-10-31 |
+  |  5  | Borrow Kink            | 900000000000000000 | 900000000000000000 | 2025-10-31 |
+  |  6  | Borrow Rate Slope Low  |         1055936073 |         1055936073 | 2025-10-31 |
+  |  7  | Borrow Rate Slope High |       126839167935 |       126839167935 | 2025-10-31 |
+  |  8  | Borrow Rate Base       |          475646879 |          475646879 | 2025-10-31 |
+
+**💰 Collaterals**
+
+  |  #  | Name          | Symbol | Address                                    | Decimals | Price Feed                                 |    CF |    LF |     LP | Max Leverage |
+  | :-: | :------------ | :----- | :----------------------------------------- | -------: | :----------------------------------------- | ----: | ----: | -----: | -----------: |
+  |  1  | Arbitrum      | ARB    | 0x912CE59144191C1204E64559FE8253a0e49E6548 |       18 | 0xb2A824043730FE05F3DA2efaFa1CBbe83fa548D6 | 55.0% | 60.0% | 10.00% |        2.22x |
+  |  2  | GMX           | GMX    | 0xfc5A1A6EB076a2C7aD06eD22C90d7E710E35ad0a |       18 | 0xDB98056FecFff59D032aB628337A4887110df3dB | 40.0% | 45.0% | 15.00% |        1.67x |
+  |  3  | Wrapped Ether | WETH   | 0x82aF49447D8a07e3bd95BD0d56f35241523fBab1 |       18 | 0x639Fe6ab55C921f74e7fac1ee960C0B6293ba612 | 78.0% | 85.0% |  7.00% |        4.55x |
+  |  4  | Wrapped BTC   | WBTC   | 0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f |        8 | 0xd0C7101eACbB49F3deCcCc166d238410D6D46d57 | 70.0% | 77.0% | 10.00% |        3.33x |
+
+</details>
+
+<details>
 <summary><strong>cUSDCv3</strong></summary>
 
 **📋 Contracts**
@@ -29,14 +72,14 @@
 
   |  #  | Parameter              |      Current Value |     Previous Value | Date Set   |
   | :-: | :--------------------- | -----------------: | -----------------: | :--------- |
-  |  1  | Supply Kink            | 900000000000000000 | 900000000000000000 | 2025-12-09 |
-  |  2  | Supply Rate Slope Low  |         1141552511 |         1141552511 | 2025-12-09 |
-  |  3  | Supply Rate Slope High |       101344495180 |       101344495180 | 2025-12-09 |
-  |  4  | Supply Rate Base       |                  0 |                  0 | 2025-12-09 |
-  |  5  | Borrow Kink            | 900000000000000000 | 900000000000000000 | 2025-12-09 |
-  |  6  | Borrow Rate Slope Low  |          880834601 |          880834601 | 2025-12-09 |
-  |  7  | Borrow Rate Slope High |       114155251141 |       114155251141 | 2025-12-09 |
-  |  8  | Borrow Rate Base       |          475646879 |          475646879 | 2025-12-09 |
+  |  1  | Supply Kink            | 900000000000000000 | 900000000000000000 | 2025-10-31 |
+  |  2  | Supply Rate Slope Low  |         1141552511 |         1141552511 | 2025-10-31 |
+  |  3  | Supply Rate Slope High |       101344495180 |       101344495180 | 2025-10-31 |
+  |  4  | Supply Rate Base       |                  0 |                  0 | 2025-10-31 |
+  |  5  | Borrow Kink            | 900000000000000000 | 900000000000000000 | 2025-10-31 |
+  |  6  | Borrow Rate Slope Low  |          880834601 |          880834601 | 2025-10-31 |
+  |  7  | Borrow Rate Slope High |       114155251141 |       114155251141 | 2025-10-31 |
+  |  8  | Borrow Rate Base       |          475646879 |          475646879 | 2025-10-31 |
 
 **💰 Collaterals**
 
@@ -1313,4 +1356,4 @@
 
 ---
 
-*Last updated:* 2025-12-26 15:57:19.556 UTC
+*Last updated:* 2025-12-26 16:42:38.120 UTC
