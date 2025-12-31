@@ -1,23 +1,25 @@
 name: Run owes markdown creation
 
 on:
-  workflow_dispatch: # manual start Actions → Run workflow
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: run-owes-md-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (with LFS)
+      - name: Checkout org repository (code + snapshots)
         uses: actions/checkout@v4
         with:
-          lfs: true
-
-      - name: Init git and lfs
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "github-actions"
-          git lfs install --local
+          fetch-depth: 1
+          lfs: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -37,6 +39,10 @@ jobs:
 
       - name: Commit & Push changes (owes md)
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+
           git add REWARDS.md
           git diff --cached --quiet || git commit -m "chore: run owes md"
+          git pull --rebase
           git push

@@ -23,16 +23,29 @@ export interface SqliteApi {
   fetchUsersPageByNetworkAndVersion: BetterSqlite3.Statement;
   fetchUsersCursorPageByNetworkAndVersion: BetterSqlite3.Statement;
   countUsersByNetworkAndVersion: BetterSqlite3.Statement;
+
+  deleteOwesByVersion: BetterSqlite3.Statement;
+  upsertOwe: BetterSqlite3.Statement;
+  txUpsertOwes: BetterSqlite3.Transaction;
+  fetchOwesPageByVersion: BetterSqlite3.Statement;
+  iterateOwesByVersion: BetterSqlite3.Statement;
+  countOwesByVersion: BetterSqlite3.Statement;
 }
 
+export interface IndexerUser {
+  rewardsAddress: string;
+  cometAddress: string;
+  userAddress: string;
+}
 /**
  * network -> users
  */
-export type IndexerUsers = Record<
-  string,
-  {
-    rewardsAddress: string;
-    cometAddress: string;
-    userAddress: string;
-  }[]
->;
+export type IndexerUsers = Record<string, IndexerUser[]>;
+
+////
+
+export interface OwedRow {
+  marketAddress: string; // V2: comptroller, V3: comet
+  userAddress: string;
+  owed: bigint;
+}

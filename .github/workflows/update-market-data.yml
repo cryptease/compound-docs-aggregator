@@ -1,19 +1,27 @@
 name: Update market data
 
 on:
-  workflow_dispatch: # manual start Actions → Run workflow
+  workflow_dispatch:
   schedule:
-    - cron: '2 12 * * *' # every day at noon (UTC)
+    - cron: '2 12 * * *' # every day at 12:02 UTC
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-market-data-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository (with LFS)
+      - name: Checkout org repository
         uses: actions/checkout@v4
         with:
-          lfs: true
+          fetch-depth: 1
+          lfs: false
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -24,12 +32,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Init git and lfs
-        run: |
-          git config --global user.email "action@github.com"
-          git config --global user.name "github-actions"
-          git lfs install --local
-
       - name: Run data generation
         env:
           ANKR_KEY: ${{ secrets.ANKR_KEY }}
@@ -39,6 +41,10 @@ jobs:
 
       - name: Commit & Push changes
         run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "github-actions"
+
           git add README.md output.json
           git diff --cached --quiet || git commit -m "chore: auto-update market data"
+          git pull --rebase
           git push
