@@ -4,16 +4,16 @@
 
 | Network   | Rewards at contract |       Rewards owed | Rewards delta (at contract - owed) |
 | :-------- | ------------------: | -----------------: | ---------------------------------: |
-| mainnet   |       15937.53 COMP |      79153.14 COMP |                     -63215.61 COMP |
-| arbitrum  |        1092.22 COMP |       7767.80 COMP |                      -6675.58 COMP |
-| base      |        2161.08 COMP |       5421.57 COMP |                      -3260.49 COMP |
-| optimism  |        1364.66 COMP |       2449.00 COMP |                      -1084.34 COMP |
-| polygon   |         713.45 COMP |       1867.42 COMP |                      -1153.96 COMP |
-| mantle    |        1991.74 COMP |       1642.17 COMP |                        349.57 COMP |
-| unichain  |         228.60 COMP |       1040.61 COMP |                       -812.00 COMP |
-| linea     |        2828.62 COMP |        751.86 COMP |                       2076.76 COMP |
+| mainnet   |       15342.12 COMP |      79562.59 COMP |                     -64220.47 COMP |
+| arbitrum  |         750.50 COMP |       7977.21 COMP |                      -7226.71 COMP |
+| base      |        1784.49 COMP |       5504.58 COMP |                      -3720.09 COMP |
+| optimism  |        1327.00 COMP |       2512.10 COMP |                      -1185.10 COMP |
+| polygon   |         687.18 COMP |       1822.58 COMP |                      -1135.40 COMP |
+| mantle    |        1952.97 COMP |       1666.94 COMP |                        286.04 COMP |
+| unichain  |         183.00 COMP |       1036.00 COMP |                       -853.01 COMP |
+| linea     |        2800.89 COMP |        799.09 COMP |                       2001.80 COMP |
 | scroll    |           0.00 COMP |          0.00 COMP |                          0.00 COMP |
-| **TOTAL** |   **26317.91 COMP** | **100093.57 COMP** |                 **-73775.66 COMP** |
+| **TOTAL** |   **24828.15 COMP** | **100881.09 COMP** |                 **-76052.94 COMP** |
 
 ---
 
@@ -21,9 +21,9 @@
 
 | Network   | Rewards at contract |      Rewards owed | Rewards delta (at contract - owed) |
 | :-------- | ------------------: | ----------------: | ---------------------------------: |
-| mainnet   |        8215.67 COMP |     90325.48 COMP |                     -82109.82 COMP |
-| **TOTAL** |    **8215.67 COMP** | **90325.48 COMP** |                 **-82109.82 COMP** |
+| mainnet   |        8203.33 COMP |     43911.35 COMP |                     -35708.01 COMP |
+| **TOTAL** |    **8203.33 COMP** | **43911.35 COMP** |                 **-35708.01 COMP** |
 
 ---
 
-*Last updated:* 2025-12-26 15:49:38.477 UTC
+*Last updated:* 2025-12-31 11:45:59.187 UTC
