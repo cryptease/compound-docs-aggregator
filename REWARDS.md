@@ -4,16 +4,16 @@
 
 | Network   | Rewards at contract |       Rewards owed | Rewards delta (at contract - owed) |
 | :-------- | ------------------: | -----------------: | ---------------------------------: |
-| mainnet   |       15342.12 COMP |      79562.59 COMP |                     -64220.47 COMP |
-| arbitrum  |         750.50 COMP |       7977.21 COMP |                      -7226.71 COMP |
-| base      |        1784.49 COMP |       5504.58 COMP |                      -3720.09 COMP |
-| optimism  |        1327.00 COMP |       2512.10 COMP |                      -1185.10 COMP |
-| polygon   |         687.18 COMP |       1822.58 COMP |                      -1135.40 COMP |
-| mantle    |        1952.97 COMP |       1666.94 COMP |                        286.04 COMP |
-| unichain  |         183.00 COMP |       1036.00 COMP |                       -853.01 COMP |
-| linea     |        2800.89 COMP |        799.09 COMP |                       2001.80 COMP |
+| mainnet   |       14237.95 COMP |      79576.59 COMP |                     -65338.63 COMP |
+| arbitrum  |         607.34 COMP |       7982.91 COMP |                      -7375.57 COMP |
+| base      |        1524.34 COMP |       5507.18 COMP |                      -3982.84 COMP |
+| optimism  |        1300.32 COMP |       2513.76 COMP |                      -1213.44 COMP |
+| polygon   |         642.34 COMP |       1822.58 COMP |                      -1180.24 COMP |
+| mantle    |        1938.90 COMP |       1667.66 COMP |                        271.25 COMP |
+| unichain  |          71.59 COMP |       1037.98 COMP |                       -966.39 COMP |
+| linea     |        2765.51 COMP |        800.62 COMP |                       1964.89 COMP |
 | scroll    |           0.00 COMP |          0.00 COMP |                          0.00 COMP |
-| **TOTAL** |   **24828.15 COMP** | **100881.09 COMP** |                 **-76052.94 COMP** |
+| **TOTAL** |   **23088.29 COMP** | **100909.28 COMP** |                 **-77820.99 COMP** |
 
 ---
 
@@ -26,4 +26,4 @@
 
 ---
 
-*Last updated:* 2025-12-31 11:45:59.187 UTC
+*Last updated:* 2025-12-31 13:55:14.062 UTC
