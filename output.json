@@ -20,49 +20,49 @@
             "date": "2026-01-01",
             "value": "900000000000000000",
             "previousValue": "900000000000000000",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "supplyPerSecondInterestRateSlopeLow": {
             "date": "2026-01-01",
             "value": "1236681887",
             "previousValue": "1236681887",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "supplyPerSecondInterestRateSlopeHigh": {
             "date": "2026-01-01",
             "value": "114155251141",
             "previousValue": "114155251141",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "supplyPerSecondInterestRateBase": {
             "date": "2026-01-01",
             "value": "0",
             "previousValue": "0",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "borrowKink": {
             "date": "2026-01-01",
             "value": "900000000000000000",
             "previousValue": "900000000000000000",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "borrowPerSecondInterestRateSlopeLow": {
             "date": "2026-01-01",
             "value": "1055936073",
             "previousValue": "1055936073",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "borrowPerSecondInterestRateSlopeHigh": {
             "date": "2026-01-01",
             "value": "126839167935",
             "previousValue": "126839167935",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           },
           "borrowPerSecondInterestRateBase": {
             "date": "2026-01-01",
             "value": "475646879",
             "previousValue": "475646879",
-            "valueSetDate": "2025-10-31"
+            "valueSetDate": "2025-12-30"
           }
         },
         "collaterals": [
@@ -4294,49 +4294,49 @@
             "date": "2026-01-01",
             "value": "850000000000000000",
             "previousValue": "850000000000000000",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "supplyPerSecondInterestRateSlopeLow": {
             "date": "2026-01-01",
             "value": "713470319",
             "previousValue": "713470319",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "supplyPerSecondInterestRateSlopeHigh": {
             "date": "2026-01-01",
             "value": "42459411466",
             "previousValue": "42459411466",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "supplyPerSecondInterestRateBase": {
             "date": "2026-01-01",
             "value": "0",
             "previousValue": "0",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "borrowKink": {
             "date": "2026-01-01",
             "value": "850000000000000000",
             "previousValue": "850000000000000000",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "borrowPerSecondInterestRateSlopeLow": {
             "date": "2026-01-01",
             "value": "559582699",
             "previousValue": "559582699",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "borrowPerSecondInterestRateSlopeHigh": {
             "date": "2026-01-01",
             "value": "47564687975",
             "previousValue": "47564687975",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           },
           "borrowPerSecondInterestRateBase": {
             "date": "2026-01-01",
             "value": "317097919",
             "previousValue": "317097919",
-            "valueSetDate": "2025-09-17"
+            "valueSetDate": "2025-12-28"
           }
         },
         "collaterals": [
